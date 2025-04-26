@@ -1,7 +1,13 @@
 {
-  "name": "@repo/db",
+  "name": "@repo/database",
   "version": "1.0.0",
   "private": "true",
+  "exports": {
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "default": "./dist/*.js"
+    }
+  },
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",

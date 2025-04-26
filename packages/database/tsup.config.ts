@@ -2,7 +2,7 @@ import { exec } from "child_process";
 import { defineConfig } from "tsup";
 
 export default defineConfig((options) => ({
-  entry: ["index.ts", "drizzle.config.ts", "db/schema.ts", "*.ts"],
+  entry: ["index", "drizzle.config.ts", "db/schema.ts", "*.ts"],
   splitting: false,
   treeshake: true,
   clean: true,
