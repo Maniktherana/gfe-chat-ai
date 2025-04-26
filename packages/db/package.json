@@ -1,0 +1,30 @@
+{
+  "name": "@repo/db",
+  "version": "1.0.0",
+  "private": "true",
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "lint": "biome check .",
+    "format": "biome check . --write",
+    "check-types": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@libsql/client": "^0.15.4",
+    "dotenv": "^16.5.0",
+    "drizzle-orm": "^0.43.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@repo/tsconfig": "workspace:*",
+    "@types/node": "^22.15.2",
+    "drizzle-kit": "^0.31.0",
+    "tsup": "^8.3.6",
+    "typescript": "^5.8.3"
+  }
+}
