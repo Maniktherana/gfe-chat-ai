@@ -6,7 +6,10 @@
     "./styles/globals.css": "./styles/globals.css",
     "./tailwind.config": "./tailwind.config.ts",
     "./lib/*": "./lib/*.ts",
-    "./hooks/*": ["./hooks/*.ts", "./hooks/*.tsx"],
+    "./hooks/*": [
+      "./hooks/*.ts",
+      "./hooks/*.tsx"
+    ],
     "./components/*": "./components/*.tsx",
     "./providers/*": "./providers/*.tsx"
   },
@@ -28,8 +31,12 @@
     "typescript": "5.8.2"
   },
   "dependencies": {
+    "@radix-ui/react-accordion": "^1.2.8",
+    "@radix-ui/react-dialog": "^1.1.11",
     "@radix-ui/react-label": "^2.1.4",
+    "@radix-ui/react-separator": "^1.1.4",
     "@radix-ui/react-slot": "^1.2.0",
+    "@radix-ui/react-tooltip": "^1.2.4",
     "@repo/tsconfig": "workspace:*",
     "@tailwindcss/vite": "^4.0.0",
     "class-variance-authority": "^0.7.1",
