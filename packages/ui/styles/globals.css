@@ -8,6 +8,7 @@
   "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
   sans-serif;
 
+  --breakpoint-*: inital;
   --breakpoint-desktop: 1440px;
   --breakpoint-tablet: 768px;
   --breakpoint-mobile: 375px;
