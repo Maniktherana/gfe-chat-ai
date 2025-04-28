@@ -1,4 +1,4 @@
 ```
-pnpm install
-pnpm run start
+npm install
+npm run start
 ```

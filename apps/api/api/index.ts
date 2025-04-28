@@ -1,15 +1,15 @@
-import { handle } from "hono/vercel";
-
 import { OpenAPIHono } from "@hono/zod-openapi";
-
-import { db } from "@repo/database/index";
+import { handle } from "hono/vercel";
 import { chatRouter } from "./routes/user/chat.index";
 
-const app = new OpenAPIHono().route("/", chatRouter);
+export const config = {
+  runtime: "edge",
+};
+
+const app = new OpenAPIHono().route("/api", chatRouter).basePath("/api");
 
 app.get("/", (c) => {
-  const datab = db;
-  return c.text("Hello Hono!");
+  return c.json({ message: "Hello Hono!" });
 });
 
 export default handle(app);
