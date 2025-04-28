@@ -6,6 +6,10 @@ const signupSchema = z.object({
   password: z.string().min(6),
 });
 
+const signupResponseSchema = z.object({
+  x: z.string(),
+});
+
 export const chatRouter = new OpenAPIHono().openapi(
   createRoute({
     path: "/hello",
@@ -14,7 +18,7 @@ export const chatRouter = new OpenAPIHono().openapi(
       200: {
         content: {
           "application/json": {
-            schema: signupSchema,
+            schema: signupResponseSchema,
           },
         },
         description: "Create user",
