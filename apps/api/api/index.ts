@@ -6,7 +6,7 @@ import { db } from "@repo/database/index";
 import { chatRouter } from "./routes/user/chat.index";
 
 export const config = {
-  runtime: "edge",
+  runtime: "nodejs",
 };
 
 const app = new OpenAPIHono().route("/", chatRouter);
