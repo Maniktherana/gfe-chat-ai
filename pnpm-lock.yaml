@@ -147,7 +147,7 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/tsconfig
       '@types/node':
-        specifier: ^22.15.2
+        specifier: ^22.15.3
         version: 22.15.3
       drizzle-kit:
         specifier: ^0.31.0
