@@ -5,17 +5,18 @@
     "deploy": "vercel"
   },
   "dependencies": {
-    "hono": "^4.7.8",
     "@hono/node-server": "^1.14.1",
     "@hono/zod-openapi": "^0.19.6",
     "@repo/database": "workspace:*",
     "bcrypt": "^5.1.1",
+    "hono": "^4.7.8",
     "jose": "^6.0.10",
     "zod": "^3.24.3"
   },
   "devDependencies": {
-    "vercel": "^32.4.1",
     "@biomejs/biome": "1.9.4",
-    "@repo/tsconfig": "workspace:*"
+    "@repo/tsconfig": "workspace:*",
+    "@types/node": "^22.15.3",
+    "vercel": "^32.4.1"
   }
 }

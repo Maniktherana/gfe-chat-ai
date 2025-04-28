@@ -51,6 +51,9 @@ importers:
       '@repo/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/tsconfig
+      '@types/node':
+        specifier: ^22.15.3
+        version: 22.15.3
       vercel:
         specifier: ^32.4.1
         version: 32.7.2
